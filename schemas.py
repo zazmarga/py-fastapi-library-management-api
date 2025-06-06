@@ -8,7 +8,7 @@ class AuthorBase(BaseModel):
     bio: str
 
 
-class AuhtorCreate(AuthorBase):
+class AuthorCreate(AuthorBase):
     pass
 
 

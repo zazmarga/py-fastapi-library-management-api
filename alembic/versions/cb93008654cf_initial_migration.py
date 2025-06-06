@@ -1,7 +1,7 @@
 """Initial migration
 
 Revision ID: cb93008654cf
-Revises: c65624e7d44d
+Revises: 
 Create Date: 2025-06-05 19:00:08.188046
 
 """
@@ -13,7 +13,7 @@ import sqlalchemy as sa
 
 # revision identifiers, used by Alembic.
 revision: str = 'cb93008654cf'
-down_revision: Union[str, None] = 'c65624e7d44d'
+down_revision: Union[str, None] = None
 branch_labels: Union[str, Sequence[str], None] = None
 depends_on: Union[str, Sequence[str], None] = None
 

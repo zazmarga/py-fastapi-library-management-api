@@ -27,7 +27,7 @@ def root():
 
 @app.post("/authors/", response_model=schemas.Author)
 def create_new_author(
-    author: schemas.AuhtorCreate,
+    author: schemas.AuthorCreate,
     db: Session = Depends(get_db),
 ):
     db_author = crud.get_author_by_name(db=db, name=author.name)

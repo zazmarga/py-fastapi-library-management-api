@@ -16,7 +16,7 @@ def get_author_by_name(db: Session, name: str):
     return db.query(models.DbAuthor).filter(models.DbAuthor.name == name).first()
 
 
-def create_author(db: Session, author: schemas.AuhtorCreate):
+def create_author(db: Session, author: schemas.AuthorCreate):
     db_author = models.DbAuthor(
         name=author.name,
         bio=author.bio
